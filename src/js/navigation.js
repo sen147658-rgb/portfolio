@@ -2,39 +2,79 @@ export function initNavigation() {
 
     const menuToggle = document.getElementById("menuToggle");
     const navigation = document.getElementById("navigation");
+    const overlay = document.getElementById("menuOverlay");
 
-    if (!menuToggle || !navigation) return;
+    if (!menuToggle || !navigation || !overlay) return;
 
-    // Open / Close Menu
+    function openMenu() {
+
+        navigation.classList.add("open");
+        overlay.classList.add("active");
+        menuToggle.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
+    }
+
+    function closeMenu() {
+
+        navigation.classList.remove("open");
+        overlay.classList.remove("active");
+        menuToggle.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
     menuToggle.addEventListener("click", () => {
 
-        menuToggle.classList.toggle("active");
-        navigation.classList.toggle("open");
+        if (navigation.classList.contains("open")) {
+
+            closeMenu();
+
+        } else {
+
+            openMenu();
+
+        }
 
     });
 
-    // Close when clicking menu item
+    overlay.addEventListener("click", closeMenu);
+
     navigation.querySelectorAll("a").forEach(link => {
 
         link.addEventListener("click", () => {
 
-            menuToggle.classList.remove("active");
-            navigation.classList.remove("open");
+            closeMenu();
 
         });
 
     });
 
-    // Close when clicking outside
-    document.addEventListener("click", (event) => {
+    window.addEventListener("resize", () => {
 
-        if (
-            !navigation.contains(event.target) &&
-            !menuToggle.contains(event.target)
-        ) {
+        if (window.innerWidth > 900) {
 
-            menuToggle.classList.remove("active");
-            navigation.classList.remove("open");
+            closeMenu();
+
+        }
+
+    });
+
+    window.addEventListener("scroll", () => {
+
+        const navbar = document.querySelector(".navbar");
+
+        if (!navbar) return;
+
+        if (window.scrollY > 20) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
 
         }
 

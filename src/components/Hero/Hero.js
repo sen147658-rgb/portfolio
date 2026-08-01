@@ -1,62 +1,118 @@
 import "./Hero.css";
 
 export function Hero() {
+
     return `
-        <section class="hero">
 
-            <div class="hero-background">
+    <section class="hero" id="home">
 
-                <div class="gradient-circle circle-one"></div>
-                <div class="gradient-circle circle-two"></div>
+        <div class="hero-background">
 
-            </div>
+            <div class="gradient-circle circle-one"></div>
 
-            <div class="container hero-container">
+            <div class="gradient-circle circle-two"></div>
 
-                <div class="hero-left">
+            <div class="gradient-circle circle-three"></div>
 
-                    <span class="hero-badge">
-                        DIGITAL LEGACY
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-container">
+
+            <div class="hero-left">
+
+                <span class="hero-badge">
+
+                    👋 Welcome To My Portfolio
+
+                </span>
+
+                <h2 class="hero-subtitle">
+
+                    Hi, I'm
+
+                </h2>
+
+                <h1 class="hero-title">
+
+                    <span class="gradient-text">
+
+                        Pranshu Sen
+
                     </span>
 
-                    <h1 class="hero-title">
-                        Every Journey
-                        <br>
-                        Deserves To Be
-                        <br>
-                        Remembered
-                    </h1>
+                </h1>
 
-                    <p class="hero-description">
-                        Preserve memories, milestones, achievements,
-                        photographs and stories in one beautiful place.
-                    </p>
+                <h3 class="hero-role">
 
-                    <div class="hero-actions">
+                    Java Backend Developer
 
-                        <button class="btn btn-primary">
-                            Explore
-                        </button>
+                </h3>
 
-                        <button class="btn btn-outline">
-                            My Journey
-                        </button>
+                <p class="hero-description">
 
-                    </div>
+                    Passionate Software Engineer with experience in building
+                    secure, scalable and enterprise-grade applications using
+                    Java, Spring Boot, Microservices, Kafka, Docker and modern
+                    cloud technologies.
+
+                    I enjoy solving complex backend problems while delivering
+                    high-quality user experiences.
+
+                </p>
+
+                <div class="hero-skills">
+
+                    <span>Java</span>
+
+                    <span>Spring Boot</span>
+
+                    <span>Microservices</span>
+
+                    <span>Kafka</span>
+
+                    <span>Docker</span>
+
+                    <span>Angular</span>
+
+                    <span>MongoDB</span>
+
+                    <span>Git</span>
 
                 </div>
 
-                <div class="hero-right">
+                <div class="hero-buttons">
 
-                    <div class="profile-ring">
+                    <a
+                        href="#resume"
+                        class="btn btn-primary">
 
-                        <div class="profile-image">
+                        Download Resume
 
-                           <img
-                                src="/Profile.jpg"
-                                alt="Profile">
+                    </a>
 
-                        </div>
+                    <a
+                        href="#projects"
+                        class="btn btn-outline">
+
+                        View Projects
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <div class="profile-ring">
+
+                    <div class="profile-image">
+
+                        <img
+                            src="/Profile.jpg"
+                            alt="Pranshu Sen">
 
                     </div>
 
@@ -64,6 +120,18 @@ export function Hero() {
 
             </div>
 
-        </section>
+        </div>
+
+        <div class="scroll-indicator">
+
+            <span></span>
+
+            <p>Scroll Down</p>
+
+        </div>
+
+    </section>
+
     `;
+
 }
