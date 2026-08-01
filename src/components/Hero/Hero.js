@@ -1,34 +1,44 @@
+import "./Hero.css";
+
 export function Hero() {
     return `
         <section class="hero">
 
-            <div class="hero-overlay"></div>
+            <div class="hero-background">
+
+                <div class="gradient-circle circle-one"></div>
+                <div class="gradient-circle circle-two"></div>
+
+            </div>
 
             <div class="container hero-container">
 
-                <div class="hero-content">
+                <div class="hero-left">
 
-                    <p class="hero-tag">
-                        A Digital Legacy
-                    </p>
+                    <span class="hero-badge">
+                        DIGITAL LEGACY
+                    </span>
 
                     <h1 class="hero-title">
-                        Every Journey <br>
-                        Deserves To Be Remembered
+                        Every Journey
+                        <br>
+                        Deserves To Be
+                        <br>
+                        Remembered
                     </h1>
 
                     <p class="hero-description">
-                        A place to preserve memories, milestones,
-                        achievements, and stories for generations.
+                        Preserve memories, milestones, achievements,
+                        photographs and stories in one beautiful place.
                     </p>
 
-                    <div class="hero-buttons">
+                    <div class="hero-actions">
 
                         <button class="btn btn-primary">
                             Explore
                         </button>
 
-                        <button class="btn btn-secondary">
+                        <button class="btn btn-outline">
                             My Journey
                         </button>
 
@@ -36,11 +46,21 @@ export function Hero() {
 
                 </div>
 
-            </div>
+                <div class="hero-right">
 
-            <div class="scroll-indicator">
+                    <div class="profile-ring">
 
-                <span></span>
+                        <div class="profile-image">
+
+                            <img
+                                src="https://placehold.co/450x450"
+                                alt="Profile">
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 

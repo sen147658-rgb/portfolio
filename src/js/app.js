@@ -11,16 +11,22 @@ export function App() {
         if (loader) {
 
             loader.style.opacity = "0";
-            loader.style.transition = "0.8s";
+            loader.style.transition = ".8s";
 
-            setTimeout(() => loader.remove(), 800);
+            setTimeout(() => {
+
+                loader.remove();
+
+            }, 800);
 
         }
 
     }, 2500);
 
     return `
+
         ${Loader()}
+
         ${Navbar()}
 
         <main>
@@ -28,5 +34,7 @@ export function App() {
             ${Hero()}
 
         </main>
+
     `;
+
 }
