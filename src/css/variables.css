@@ -1,0 +1,37 @@
+:root {
+
+    /* Primary Colors */
+    --primary: #071E3D;
+    --secondary: #1F4287;
+    --accent: #278EA5;
+    --highlight: #21E6C1;
+
+    /* Backgrounds */
+    --bg-primary: #020B16;
+    --bg-secondary: #081C3A;
+    --glass: rgba(255,255,255,0.08);
+
+    /* Text */
+    --text-primary: #FFFFFF;
+    --text-secondary: #D8E3F0;
+    --text-muted: #9CAFC4;
+
+    /* Border */
+    --border: rgba(255,255,255,0.12);
+
+    /* Shadow */
+    --shadow-lg: 0 20px 60px rgba(0,0,0,.45);
+
+    /* Radius */
+    --radius:16px;
+
+    /* Transition */
+    --transition:.35s ease;
+
+    /* Max Width */
+    --container:1280px;
+
+    /* Navbar Height */
+    --navbar-height:80px;
+
+}

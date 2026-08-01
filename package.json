@@ -1,0 +1,21 @@
+{
+  "name": "legacy",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.2.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "aos": "^2.3.4",
+    "gsap": "^3.15.0",
+    "swiper": "^14.0.7",
+    "tsparticles": "^4.3.2"
+  }
+}
