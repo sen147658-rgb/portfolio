@@ -52,8 +52,8 @@ export function Hero() {
 
                         <div class="profile-image">
 
-                            <img
-                                src="https://placehold.co/450x450"
+                           <img
+                                src="/Profile.jpg"
                                 alt="Profile">
 
                         </div>
