@@ -1,3 +1,5 @@
+import "./Contact.css";
+
 export function Contact() {
 
     return `
@@ -8,73 +10,150 @@ export function Contact() {
 
             <div class="contact-header">
 
-                <h1 class="page-title">
-                    Get In Touch
+                <span class="section-tag">
+
+                    GET IN TOUCH
+
+                </span>
+
+                <h1>
+
+                    Let's Build Something Amazing
+
                 </h1>
 
-                <p class="page-description">
-                    I'm always open to discussing Java Backend Developer opportunities,
-                    freelance projects, collaborations, or simply connecting with fellow
-                    software engineers.
+                <p>
+
+                    I'm always open to discussing Java Backend Development,
+                    Full Stack opportunities, freelance projects, and exciting
+                    collaborations.
+
                 </p>
 
             </div>
 
             <div class="contact-grid">
 
-                <div class="contact-card">
+                <!-- LEFT -->
 
-                    <h3>📧 Email</h3>
+                <div class="contact-info">
 
-                    <a href="mailto:pranshumca@gmail.com">
-                        pranshumca@gmail.com
-                    </a>
+                    <div class="info-card">
+
+                        <h3>📧 Email</h3>
+
+                        <a href="mailto:pranshumca@gmail.com">
+
+                            pranshumca@gmail.com
+
+                        </a>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>📱 Phone</h3>
+
+                        <a href="tel:+917489768236">
+
+                            +91 74897 68236
+
+                        </a>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>💼 LinkedIn</h3>
+
+                        <a
+                            href="https://www.linkedin.com/in/pranshu-sen-37a63a196/"
+                            target="_blank">
+
+                            linkedin.com/in/pranshu-sen-37a63a196
+
+                        </a>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>💻 GitHub</h3>
+
+                        <a
+                            href="https://github.com/pranshu7489768236"
+                            target="_blank">
+
+                            github.com/pranshu7489768236
+
+                        </a>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>📍 Location</h3>
+
+                        <p>
+
+                            Bengaluru, Karnataka, India
+
+                        </p>
+
+                    </div>
 
                 </div>
 
-                <div class="contact-card">
+                <!-- RIGHT -->
 
-                    <h3>📱 Phone</h3>
+                <div class="contact-form">
 
-                    <a href="tel:+917489768236">
-                        +91 74897 68236
-                    </a>
+                    <form id="contactForm">
 
-                </div>
+                        <div class="form-group">
 
-                <div class="contact-card">
+                            <input
+                                type="text"
+                                placeholder="Your Name"
+                                required>
 
-                    <h3>📍 Location</h3>
+                        </div>
 
-                    <p>
-                        Bengaluru, Karnataka, India
-                    </p>
+                        <div class="form-group">
 
-                </div>
+                            <input
+                                type="email"
+                                placeholder="Your Email"
+                                required>
 
-                <div class="contact-card">
+                        </div>
 
-                    <h3>💻 GitHub</h3>
+                        <div class="form-group">
 
-                    <a href="https://github.com/pranshu7489768236"
-                       target="_blank">
+                            <input
+                                type="text"
+                                placeholder="Subject">
 
-                        github.com/pranshu7489768236
+                        </div>
 
-                    </a>
+                        <div class="form-group">
 
-                </div>
+                            <textarea
+                                rows="6"
+                                placeholder="Write your message..."
+                                required></textarea>
 
-                <div class="contact-card">
+                        </div>
 
-                    <h3>💼 LinkedIn</h3>
+                        <button
+                            type="submit"
+                            class="send-btn">
 
-                    <a href="https://www.linkedin.com/in/pranshu-sen-37a63a196/"
-                       target="_blank">
+                            Send Message
 
-                        linkedin.com/in/pranshu-sen-37a63a196
+                        </button>
 
-                    </a>
+                    </form>
 
                 </div>
 

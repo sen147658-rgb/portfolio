@@ -4,114 +4,89 @@ export function About() {
 
     return `
 
-    <section class="about-section" id="about">
+    <section class="about-page">
 
         <div class="container">
 
-            <div class="section-header">
+            <div class="about-header">
 
-                <span class="section-badge">
+                <span class="section-tag">
 
                     ABOUT ME
 
                 </span>
 
-                <h2 class="section-title">
+                <h1>
 
                     Passionate Java Backend Developer
 
-                </h2>
+                </h1>
 
-                <p class="section-description">
+                <p>
 
-                    Building secure, scalable and enterprise-grade applications
-                    with modern backend technologies.
+                    I specialize in building scalable enterprise applications,
+                    secure REST APIs and microservices using modern Java
+                    technologies.
 
                 </p>
 
             </div>
 
-            <div class="about-content">
+            <div class="about-grid">
 
-                <div class="about-image">
+                <div class="about-card">
 
-                    <div class="about-image-ring">
+                    <h2>
 
-                        <img
-                            src="/Profile.jpg"
-                            alt="Pranshu Sen">
+                        👨 About Me
 
-                    </div>
+                    </h2>
+
+                    <p>
+
+                        Hi, I'm <strong>Pranshu Sen</strong>, a Java Backend
+                        Developer with 4+ years of experience working on
+                        enterprise applications.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy solving complex backend problems,
+                        optimizing APIs, designing scalable architectures,
+                        and continuously learning new technologies.
+
+                    </p>
 
                 </div>
 
-                <div class="about-info">
+                <div class="about-card">
 
-                    <h3>
+                    <h2>
 
-                        Hello, I'm Pranshu Sen 👋
+                        🚀 What I Do
 
-                    </h3>
+                    </h2>
 
-                    <p>
+                    <ul>
 
-                        I am a Java Backend Developer with over 4 years of
-                        experience in designing and developing enterprise
-                        applications.
+                        <li>Enterprise Java Development</li>
 
-                    </p>
+                        <li>Spring Boot Applications</li>
 
-                    <p>
+                        <li>Microservices Architecture</li>
 
-                        My expertise includes Java, Spring Boot,
-                        Microservices, Kafka, Docker, PostgreSQL,
-                        MongoDB and Angular.
+                        <li>REST API Development</li>
 
-                    </p>
+                        <li>Kafka Integration</li>
 
-                    <p>
+                        <li>Database Design</li>
 
-                        I enjoy solving real-world problems,
-                        writing clean code and continuously
-                        learning new technologies.
+                        <li>Angular Applications</li>
 
-                    </p>
+                        <li>Performance Optimization</li>
 
-                    <div class="about-details">
-
-                        <div>
-
-                            <span>Name</span>
-
-                            <strong>Pranshu Sen</strong>
-
-                        </div>
-
-                        <div>
-
-                            <span>Location</span>
-
-                            <strong>Bangalore, India</strong>
-
-                        </div>
-
-                        <div>
-
-                            <span>Experience</span>
-
-                            <strong>4+ Years</strong>
-
-                        </div>
-
-                        <div>
-
-                            <span>Email</span>
-
-                            <strong>pranshumca@gmail.com</strong>
-
-                        </div>
-
-                    </div>
+                    </ul>
 
                 </div>
 
@@ -121,7 +96,7 @@ export function About() {
 
                 <div class="stat-card">
 
-                    <h3>4+</h3>
+                    <h2>4+</h2>
 
                     <p>Years Experience</p>
 
@@ -129,15 +104,7 @@ export function About() {
 
                 <div class="stat-card">
 
-                    <h3>20+</h3>
-
-                    <p>Enterprise APIs</p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3>3+</h3>
+                    <h2>20+</h2>
 
                     <p>Projects</p>
 
@@ -145,9 +112,17 @@ export function About() {
 
                 <div class="stat-card">
 
-                    <h3>10+</h3>
+                    <h2>15+</h2>
 
                     <p>Technologies</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h2>100%</h2>
+
+                    <p>Dedication</p>
 
                 </div>
 

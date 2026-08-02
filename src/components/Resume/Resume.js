@@ -4,169 +4,246 @@ export function Resume() {
 
     return `
 
-    <section class="resume-section" id="resume">
+    <section class="resume-page">
 
         <div class="container">
 
-            <div class="section-header">
+            <div class="resume-header">
 
-                <span class="section-badge">
-                    MY RESUME
+                <span class="section-tag">
+                    PROFESSIONAL PROFILE
                 </span>
 
-                <h2 class="section-title">
-                    Professional Profile
-                </h2>
+                <h1 class="resume-title">
+                    Resume
+                </h1>
 
-                <p class="section-description">
+                <p class="resume-description">
 
-                    A summary of my professional journey, technical expertise,
-                    education and achievements as a Java Backend Developer.
+                    Java Backend Developer with 4+ years of experience in designing,
+                    developing and maintaining enterprise applications using Java,
+                    Spring Boot, Microservices, REST APIs, Kafka, PostgreSQL,
+                    Angular and cloud technologies.
 
                 </p>
 
+                <a
+                    href="/resume/Pranshu_Sen_Resume.pdf"
+                    download
+                    class="download-btn">
+
+                    ⬇ Download Resume
+
+                </a>
+
             </div>
 
-            <div class="resume-grid">
+            <!-- Summary -->
 
-                <div class="resume-card">
+            <section class="resume-section">
 
-                    <h3>Professional Summary</h3>
+                <h2>Professional Summary</h2>
+
+                <div class="glass-card">
 
                     <p>
 
-                        Java Backend Developer with 4+ years of experience in
-                        designing and developing enterprise applications using
-                        Java, Spring Boot, Microservices, Kafka, Docker,
-                        MongoDB and PostgreSQL.
-
-                        Passionate about scalable backend systems,
-                        cloud technologies and clean architecture.
+                        Passionate Software Engineer with strong expertise in backend
+                        development, distributed systems and scalable REST APIs.
+                        Experienced in enterprise banking and security applications.
+                        Skilled in Java, Spring Boot, Microservices, Kafka,
+                        PostgreSQL, MongoDB and Angular.
 
                     </p>
 
                 </div>
 
-                <div class="resume-card">
+            </section>
 
-                    <h3>Experience</h3>
+            <!-- Experience -->
 
-                    <ul>
+            <section class="resume-section">
 
-                        <li>
-                            <strong>Infosys</strong><br>
-                            Java Backend Developer<br>
+                <h2>Experience</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-year">
+
                             2025 - Present
-                        </li>
 
-                        <li>
-                            <strong>Atos</strong><br>
-                            Software Engineer<br>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>Infosys</h3>
+
+                            <h4>Java Backend Developer</h4>
+
+                            <p>
+
+                                Working on enterprise applications using Java,
+                                Spring Boot, Microservices, REST APIs, Kafka,
+                                PostgreSQL and Angular.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-year">
+
                             2022 - 2025
-                        </li>
 
-                        <li>
-                            <strong>NJ Group</strong><br>
-                            Full Stack Developer<br>
-                            2021
-                        </li>
+                        </div>
 
-                    </ul>
+                        <div class="timeline-content">
 
-                </div>
+                            <h3>Atos</h3>
 
-                <div class="resume-card">
+                            <h4>Software Engineer</h4>
 
-                    <h3>Technical Skills</h3>
+                            <p>
 
-                    <div class="skill-list">
+                                Built scalable backend services, security modules,
+                                API integrations and vulnerability management
+                                solutions.
 
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Microservices</span>
-                        <span>Kafka</span>
-                        <span>Docker</span>
-                        <span>Angular</span>
-                        <span>MongoDB</span>
-                        <span>PostgreSQL</span>
-                        <span>Git</span>
-                        <span>REST APIs</span>
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <div class="resume-card">
+            </section>
 
-                    <h3>Education</h3>
+            <!-- Skills -->
+
+            <section class="resume-section">
+
+                <h2>Technical Skills</h2>
+
+                <div class="skills-grid">
+
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Microservices</span>
+                    <span>Spring Security</span>
+                    <span>Hibernate</span>
+                    <span>Kafka</span>
+                    <span>REST API</span>
+                    <span>PostgreSQL</span>
+                    <span>MongoDB</span>
+                    <span>Angular</span>
+                    <span>Git</span>
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+
+                </div>
+
+            </section>
+
+            <!-- Projects -->
+
+            <section class="resume-section">
+
+                <h2>Featured Projects</h2>
+
+                <div class="project-grid">
+
+                    <div class="project-card">
+
+                        <h3>Vulnerability Management System</h3>
+
+                        <p>
+
+                            Enterprise security platform built using Spring Boot,
+                            Kafka and PostgreSQL.
+
+                        </p>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <h3>Hospital Management System</h3>
+
+                        <p>
+
+                            Full Stack application using Java, Spring Boot,
+                            Angular and PostgreSQL.
+
+                        </p>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <h3>Portfolio Website</h3>
+
+                        <p>
+
+                            Premium responsive developer portfolio built with
+                            JavaScript, HTML and CSS.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Education -->
+
+            <section class="resume-section">
+
+                <h2>Education</h2>
+
+                <div class="glass-card">
+
+                    <h3>Master of Computer Applications (MCA)</h3>
 
                     <p>
 
-                        <strong>Master of Computer Applications</strong>
-
-                        <br><br>
-
-                        RKDF University
-
-                        <br>
-
-                        2021
+                        RKDF University, Bhopal
 
                     </p>
 
                 </div>
 
-                <div class="resume-card">
+            </section>
 
-                    <h3>Projects</h3>
+            <!-- Certifications -->
+
+            <section class="resume-section">
+
+                <h2>Certifications</h2>
+
+                <div class="glass-card">
 
                     <ul>
 
-                        <li>Vulnerability Management System</li>
+                        <li>Java & Spring Boot Development</li>
 
-                        <li>JCB Marketplace</li>
+                        <li>Microservices Architecture</li>
 
-                        <li>Legacy Portfolio</li>
+                        <li>REST API Development</li>
+
+                        <li>Git & GitHub</li>
 
                     </ul>
 
                 </div>
 
-                <div class="resume-card">
-
-                    <h3>Resume</h3>
-
-                    <div class="resume-buttons">
-
-                        <a
-
-                            href="/assets/resume/Pranshu_Sen_Resume.pdf"
-
-                            target="_blank"
-
-                            class="btn btn-primary">
-
-                            View Resume
-
-                        </a>
-
-                        <a
-
-                            href="/assets/resume/Pranshu_Sen_Resume.pdf"
-
-                            download
-
-                            class="btn btn-outline">
-
-                            Download Resume
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
+            </section>
 
         </div>
 

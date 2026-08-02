@@ -8,6 +8,7 @@ import { Gallery } from "../components/Gallery/Gallery.js";
 import { Family } from "../components/Family/Family.js";
 import { Contact } from "../components/Contact/Contact.js";
 import { Achievements } from "../components/Achievements/Achievements.js";
+import { Projects } from "../components/Projects/Projects.js";
 
 export function renderCurrentPage() {
 
@@ -38,6 +39,9 @@ export function renderCurrentPage() {
 
         case "contact":
             return Contact();
+
+        case "projects":
+            return Projects();
 
         default:
             return Hero();

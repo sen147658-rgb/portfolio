@@ -392,3 +392,138 @@
     background:#21E6C1;
     animation:scrollMove 1.6s infinite;
 }
+/* ===========================
+   Contact Section
+=========================== */
+
+.contact-page{
+
+    padding:120px 0 80px;
+
+}
+
+.contact-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.page-title{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+.page-description{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#9fb8d5;
+
+    line-height:1.8;
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.contact-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#21E6C1;
+
+    box-shadow:0 15px 40px rgba(33,230,193,.12);
+
+}
+
+.contact-card h3{
+
+    color:#21E6C1;
+
+    margin-bottom:15px;
+
+}
+
+.contact-card a,
+
+.contact-card p{
+
+    color:#ffffff;
+
+    word-break:break-word;
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    .contact-page{
+
+        padding:90px 20px 50px;
+
+    }
+
+    .page-title{
+
+        font-size:34px;
+
+    }
+
+    .page-description{
+
+        font-size:16px;
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .contact-card{
+
+        padding:22px;
+
+    }
+
+}

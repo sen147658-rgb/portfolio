@@ -4,89 +4,49 @@ export function Hero() {
 
     return `
 
-    <section class="hero" id="home">
+    <section class="hero">
 
-        <div class="hero-background">
-
-            <div class="gradient-circle circle-one"></div>
-
-            <div class="gradient-circle circle-two"></div>
-
-            <div class="gradient-circle circle-three"></div>
-
-        </div>
-
-        <div class="hero-overlay"></div>
+        <div class="hero-bg"></div>
 
         <div class="container hero-container">
 
             <div class="hero-left">
 
-                <span class="hero-badge">
+                <span class="hero-tag">
 
-                    👋 Welcome To My Portfolio
+                    👋 Hello, I'm
 
                 </span>
 
-                <h2 class="hero-subtitle">
+                <h1>
 
-                    Hi, I'm
-
-                </h2>
-
-                <h1 class="hero-title">
-
-                    <span class="gradient-text">
-
-                        Pranshu Sen
-
-                    </span>
+                    Pranshu Sen
 
                 </h1>
 
-                <h3 class="hero-role">
+                <h2>
 
-                    Java Backend Developer
+                    <span id="typing-text">
 
-                </h3>
+                        Java Backend Developer
 
-                <p class="hero-description">
+                    </span>
 
-                    Passionate Software Engineer with experience in building
-                    secure, scalable and enterprise-grade applications using
-                    Java, Spring Boot, Microservices, Kafka, Docker and modern
-                    cloud technologies.
+                </h2>
 
-                    I enjoy solving complex backend problems while delivering
-                    high-quality user experiences.
+                <p>
+
+                    Passionate Java Backend Developer with 4+ years of experience
+                    building enterprise applications using Java, Spring Boot,
+                    Microservices, Kafka, PostgreSQL and Angular.
 
                 </p>
-
-                <div class="hero-skills">
-
-                    <span>Java</span>
-
-                    <span>Spring Boot</span>
-
-                    <span>Microservices</span>
-
-                    <span>Kafka</span>
-
-                    <span>Docker</span>
-
-                    <span>Angular</span>
-
-                    <span>MongoDB</span>
-
-                    <span>Git</span>
-
-                </div>
 
                 <div class="hero-buttons">
 
                     <a
-                        href="/src/assets/resume/Pranshu_Sen_Resume.pdf"
-                        target="_blank"
+                        href="#"
+                        data-page="resume"
                         class="btn btn-primary">
 
                         View Resume
@@ -94,19 +54,38 @@ export function Hero() {
                     </a>
 
                     <a
-                        href="/src/assets/resume/Pranshu_Sen_Resume.pdf"
-                        download="Pranshu_Sen_Resume.pdf"
+                        href="#"
+                        data-page="contact"
                         class="btn btn-outline">
 
-                        Download Resume
+                        Contact Me
+
+                    </a>
+
+                </div>
+
+                <div class="hero-social">
+
+                    <a
+                        href="https://github.com/pranshu7489768236"
+                        target="_blank">
+
+                        GitHub
 
                     </a>
 
                     <a
-                        href="#projects"
-                        class="btn btn-outline">
+                        href="https://www.linkedin.com/in/pranshu-sen-37a63a196/"
+                        target="_blank">
 
-                        View Projects
+                        LinkedIn
+
+                    </a>
+
+                    <a
+                        href="mailto:pranshumca@gmail.com">
+
+                        Email
 
                     </a>
 
@@ -116,12 +95,12 @@ export function Hero() {
 
             <div class="hero-right">
 
-                <div class="profile-ring">
+                <div class="profile-circle">
 
-                    <div class="profile-image">
+                    <div class="profile-avatar">
 
                         <img
-                            src="/Profile.jpg"
+                            src="/images/profile.jpg"
                             alt="Pranshu Sen">
 
                     </div>
@@ -132,11 +111,71 @@ export function Hero() {
 
         </div>
 
-        <div class="scroll-indicator">
+        <div class="hero-stats">
 
-            <span></span>
+            <div>
 
-            <p>Scroll Down</p>
+                <h2>
+
+                    4+
+
+                </h2>
+
+                <p>
+
+                    Years
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h2>
+
+                    3+
+
+                </h2>
+
+                <p>
+
+                    Projects
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h2>
+
+                    15+
+
+                </h2>
+
+                <p>
+
+                    Technologies
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h2>
+
+                    100%
+
+                </h2>
+
+                <p>
+
+                    Passion
+
+                </p>
+
+            </div>
 
         </div>
 

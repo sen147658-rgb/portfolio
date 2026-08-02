@@ -3,29 +3,29 @@ import { renderApp } from "./app.js";
 
 export function initNavigation() {
 
-    bindLinks();
+    bindNavigation();
 
     initMenu();
 
 }
 
-function bindLinks() {
+function bindNavigation() {
 
-    document.querySelectorAll("[data-page]").forEach(link => {
+    document.querySelectorAll("[data-page]").forEach(element => {
 
-        link.onclick = (e) => {
+        element.onclick = (event) => {
 
-            e.preventDefault();
+            event.preventDefault();
 
-            const page = link.dataset.page;
+            const page = element.dataset.page;
+
+            if (!page) return;
 
             setPage(page);
 
-            renderApp();
-
-            updateActive(page);
-
             closeMenu();
+
+            renderApp();
 
             window.scrollTo({
                 top: 0,
@@ -36,19 +36,23 @@ function bindLinks() {
 
     });
 
-    updateActive(getCurrentPage());
+    updateActive();
 
 }
 
-function updateActive(page) {
+function updateActive() {
+
+    const currentPage = getCurrentPage();
 
     document.querySelectorAll("[data-page]").forEach(link => {
 
-        link.classList.remove("active");
-
-        if (link.dataset.page === page) {
+        if (link.dataset.page === currentPage) {
 
             link.classList.add("active");
+
+        } else {
+
+            link.classList.remove("active");
 
         }
 
@@ -58,34 +62,54 @@ function updateActive(page) {
 
 function initMenu() {
 
-    const toggle = document.getElementById("menuToggle");
+    const menuButton = document.getElementById("menuToggle");
 
-    const nav = document.getElementById("navigation");
+    const closeButton = document.getElementById("closeMenu");
+
+    const navigation = document.getElementById("navigation");
 
     const overlay = document.getElementById("menuOverlay");
 
-    if (!toggle) return;
+    if (!menuButton || !navigation) return;
 
-    toggle.onclick = () => {
+    menuButton.onclick = openMenu;
 
-        toggle.classList.toggle("active");
+    closeButton?.addEventListener("click", closeMenu);
 
-        nav.classList.toggle("open");
+    overlay?.addEventListener("click", closeMenu);
 
-        overlay.classList.toggle("active");
+    document.addEventListener("keydown", (event) => {
 
-    };
+        if (event.key === "Escape") {
 
-    overlay.onclick = closeMenu;
+            closeMenu();
+
+        }
+
+    });
+
+    function openMenu() {
+
+        menuButton.classList.add("active");
+
+        navigation.classList.add("open");
+
+        overlay?.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
+    }
 
 }
 
-function closeMenu() {
+export function closeMenu() {
 
     document.getElementById("menuToggle")?.classList.remove("active");
 
     document.getElementById("navigation")?.classList.remove("open");
 
     document.getElementById("menuOverlay")?.classList.remove("active");
+
+    document.body.style.overflow = "";
 
 }
