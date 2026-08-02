@@ -38,11 +38,7 @@ export function Navbar() {
 
                 <a href="#" data-page="projects">Projects</a>
 
-                <a href="#" data-page="resume">Resume</a>
-
                 <a href="#" data-page="gallery">Gallery</a>
-
-                <a href="#" data-page="family">Family</a>
 
                 <a href="#" data-page="contact">Contact</a>
 
@@ -76,14 +72,9 @@ export function Navbar() {
 
     </header>
 
-    <div
-        class="menu-overlay"
-        id="menuOverlay">
-    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
 
-    <nav
-        class="mobile-menu"
-        id="navigation">
+    <nav class="mobile-menu" id="navigation">
 
         <button
             class="close-menu"
@@ -103,11 +94,7 @@ export function Navbar() {
 
             <li><a href="#" data-page="projects">🚀 Projects</a></li>
 
-            <li><a href="#" data-page="resume">📄 Resume</a></li>
-
             <li><a href="#" data-page="gallery">🖼 Gallery</a></li>
-
-            <li><a href="#" data-page="family">❤️ Family</a></li>
 
             <li><a href="#" data-page="contact">📞 Contact</a></li>
 

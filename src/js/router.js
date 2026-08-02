@@ -5,10 +5,10 @@ import { About } from "../components/About/About.js";
 import { Resume } from "../components/Resume/Resume.js";
 import { Timeline } from "../components/Timeline/Timeline.js";
 import { Gallery } from "../components/Gallery/Gallery.js";
-import { Family } from "../components/Family/Family.js";
 import { Contact } from "../components/Contact/Contact.js";
 import { Achievements } from "../components/Achievements/Achievements.js";
 import { Projects } from "../components/Projects/Projects.js";
+import { Experience } from "../components/Experience/Experience.js";
 
 export function renderCurrentPage() {
 
@@ -23,7 +23,7 @@ export function renderCurrentPage() {
             return About();
 
         case "experience":
-            return Timeline();
+            return Experience();
 
         case "projects":
             return Achievements();

@@ -4,29 +4,21 @@ export function Experience() {
 
     return `
 
-    <section class="experience-page">
+    <section class="experience">
 
         <div class="container">
 
-            <div class="experience-header">
+            <div class="section-header">
 
-                <span class="section-tag">
+                <span>MY JOURNEY</span>
 
-                    CAREER JOURNEY
-
-                </span>
-
-                <h1>
-
-                    Professional Experience
-
-                </h1>
+                <h2>Professional Experience</h2>
 
                 <p>
 
-                    Over 4+ years of experience developing enterprise Java applications,
-                    building scalable microservices, and delivering secure backend
-                    solutions for global clients.
+                    Over 4+ years of building enterprise backend applications,
+                    REST APIs, Microservices and secure Java solutions for
+                    global organizations.
 
                 </p>
 
@@ -40,62 +32,86 @@ export function Experience() {
 
                     <div class="timeline-dot"></div>
 
-                    <div class="timeline-content">
+                    <div class="timeline-card">
 
-                        <span class="timeline-date">
+                        <div class="timeline-date">
 
-                            Jul 2025 – Present
-
-                        </span>
-
-                        <h2>
-
-                            Infosys
-
-                        </h2>
+                            Jul 2025 – Oct 2026
+                        </div>
 
                         <h3>
 
-                            Java Backend Developer
+                            Technology Analyst
 
                         </h3>
 
+                        <h4>
+
+                            Infosys Ltd.
+
+                        </h4>
+
                         <p>
 
-                            Working on enterprise banking applications for Vanguard,
-                            focusing on backend modernization, vulnerability remediation,
-                            dependency upgrades and secure API development.
+                            Working for Vanguard, one of the largest financial
+                            organizations in the United States, delivering
+                            secure backend solutions and production support.
 
                         </p>
 
                         <ul>
 
-                            <li>Spring Boot application upgrades</li>
+                            <li>
+                                Upgraded Java and Spring Boot applications to remove security vulnerabilities.
+                            </li>
 
-                            <li>Microservices development</li>
+                            <li>
+                                Built and maintained REST APIs using Spring Boot.
+                            </li>
 
-                            <li>REST API enhancements</li>
+                            <li>
+                                Automated CI/CD pipelines using GitHub Actions.
+                            </li>
 
-                            <li>Security vulnerability remediation</li>
+                            <li>
+                                Worked with Docker deployments and production releases.
+                            </li>
 
-                            <li>SonarQube integration</li>
+                            <li>
+                                Integrated Wiz and SonarQube security scanning.
+                            </li>
 
-                            <li>Wiz vulnerability fixes</li>
+                            <li>
+                                Wrote JUnit & Mockito test cases ensuring quality coverage.
+                            </li>
 
-                            <li>PostgreSQL optimization</li>
-
-                            <li>Production support</li>
+                            <li>
+                                Participated in Agile ceremonies, code reviews and design discussions.
+                            </li>
 
                         </ul>
 
                         <div class="tech-stack">
 
-                            <span>Java</span>
+                            <span>Java 8/11</span>
+
                             <span>Spring Boot</span>
-                            <span>Angular</span>
-                            <span>Kafka</span>
-                            <span>PostgreSQL</span>
-                            <span>Git</span>
+
+                            <span>REST API</span>
+
+                            <span>Maven</span>
+
+                            <span>Docker</span>
+
+                            <span>GitHub Actions</span>
+
+                            <span>JUnit</span>
+
+                            <span>Mockito</span>
+
+                            <span>SonarQube</span>
+
+                            <span>Wiz</span>
 
                         </div>
 
@@ -103,67 +119,177 @@ export function Experience() {
 
                 </div>
 
-                <!-- Atos -->
+                <!-- ATOS -->
 
                 <div class="timeline-item">
 
                     <div class="timeline-dot"></div>
 
-                    <div class="timeline-content">
+                    <div class="timeline-card">
 
-                        <span class="timeline-date">
+                        <div class="timeline-date">
 
                             Jun 2022 – Jul 2025
 
-                        </span>
-
-                        <h2>
-
-                            Atos
-
-                        </h2>
+                        </div>
 
                         <h3>
 
-                            Software Engineer
+                            Java Backend Developer
 
                         </h3>
 
+                        <h4>
+
+                            Atos
+
+                        </h4>
+
                         <p>
 
-                            Developed enterprise security applications for vulnerability
-                            management and asset monitoring using Java, Spring Boot,
-                            Microservices and Kafka.
+                            Developed enterprise Vulnerability Management
+                            Platform using Java Microservices architecture for
+                            security monitoring and risk management.
 
                         </p>
 
                         <ul>
 
-                            <li>Backend development using Spring Boot</li>
+                            <li>
+                                Designed and developed Java Spring Boot Microservices.
+                            </li>
 
-                            <li>REST API development</li>
+                            <li>
+                                Developed REST APIs consumed by multiple applications.
+                            </li>
 
-                            <li>Microservices architecture</li>
+                            <li>
+                                Implemented Apache Kafka messaging.
+                            </li>
 
-                            <li>Kafka messaging integration</li>
+                            <li>
+                                Integrated Drools Rules Engine for automated risk scoring.
+                            </li>
 
-                            <li>PostgreSQL database design</li>
+                            <li>
+                                Used PostgreSQL, MongoDB and Redis.
+                            </li>
 
-                            <li>Bug fixing & performance optimization</li>
+                            <li>
+                                Optimized SQL queries and indexing.
+                            </li>
 
-                            <li>Agile development</li>
+                            <li>
+                                Performed unit testing using JUnit and Mockito.
+                            </li>
 
-                            <li>Code reviews</li>
+                            <li>
+                                Participated in Agile development and code reviews.
+                            </li>
 
                         </ul>
 
                         <div class="tech-stack">
 
                             <span>Java</span>
+
                             <span>Spring Boot</span>
+
                             <span>Kafka</span>
-                            <span>REST API</span>
+
+                            <span>Drools</span>
+
+                            <span>Redis</span>
+
+                            <span>MongoDB</span>
+
                             <span>PostgreSQL</span>
+
+                            <span>REST APIs</span>
+
+                            <span>Microservices</span>
+
+                            <span>JUnit</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- NJ GROUP -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <div class="timeline-date">
+
+                            Jan 2022 – Jun 2022
+
+                        </div>
+
+                        <h3>
+
+                            Senior Executive
+
+                        </h3>
+
+                        <h4>
+
+                            NJ Group
+
+                        </h4>
+
+                        <p>
+
+                            Worked as a Java Full Stack Developer building
+                            internal business applications and backend modules.
+
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Developed Java backend modules.
+                            </li>
+
+                            <li>
+                                Built responsive UI using Angular.
+                            </li>
+
+                            <li>
+                                Created REST APIs using Spring Boot.
+                            </li>
+
+                            <li>
+                                Integrated PostgreSQL database.
+                            </li>
+
+                            <li>
+                                Fixed production defects and performance issues.
+                            </li>
+
+                            <li>
+                                Worked with Git and Agile methodology.
+                            </li>
+
+                        </ul>
+
+                        <div class="tech-stack">
+
+                            <span>Java</span>
+
+                            <span>Spring Boot</span>
+
+                            <span>Angular</span>
+
+                            <span>PostgreSQL</span>
+
+                            <span>REST APIs</span>
+
                             <span>Git</span>
 
                         </div>

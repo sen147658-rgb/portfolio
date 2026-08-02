@@ -1,74 +1,91 @@
-/* =====================================================
-   PROJECTS PAGE
-===================================================== */
+/* ===========================================================
+   PROJECTS SECTION
+=========================================================== */
 
-.projects-page{
+.projects{
 
-    min-height:100vh;
+    padding:120px 0;
 
-    padding:120px 0 80px;
+    background:#071624;
 
-    background:linear-gradient(180deg,#020B16,#081C3A);
+    position:relative;
+
+    overflow:hidden;
 
 }
 
-.projects-header{
+.projects::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(circle at top right,
+        rgba(33,230,193,.08),
+        transparent 40%);
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.section-header{
 
     text-align:center;
 
-    margin-bottom:70px;
+    margin-bottom:80px;
 
 }
 
-.projects-header h1{
-
-    font-size:58px;
-
-    margin:20px 0;
-
-    color:#ffffff;
-
-}
-
-.projects-header p{
-
-    max-width:760px;
-
-    margin:auto;
-
-    line-height:1.9;
-
-    color:#b8c7d6;
-
-    font-size:18px;
-
-}
-
-.section-tag{
-
-    display:inline-block;
-
-    padding:10px 22px;
-
-    border-radius:40px;
-
-    background:rgba(33,230,193,.12);
-
-    border:1px solid rgba(33,230,193,.35);
+.section-header span{
 
     color:#21E6C1;
 
-    letter-spacing:2px;
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-weight:600;
 
     font-size:14px;
 
 }
 
-/* =====================================================
-   GRID
-===================================================== */
+.section-header h2{
 
-.projects-grid{
+    margin:18px 0;
+
+    font-size:52px;
+
+    color:#ffffff;
+
+}
+
+.section-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#9fb8d5;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   GRID
+=========================================================== */
+
+.project-grid{
 
     display:grid;
 
@@ -78,103 +95,95 @@
 
 }
 
-/* =====================================================
+/* ===========================================================
    CARD
-===================================================== */
+=========================================================== */
 
 .project-card{
 
-    position:relative;
-
-    overflow:hidden;
-
     background:rgba(255,255,255,.05);
-
-    backdrop-filter:blur(20px);
 
     border:1px solid rgba(255,255,255,.08);
 
-    border-radius:24px;
+    border-radius:28px;
 
-    padding:35px;
+    overflow:hidden;
 
-    transition:.35s;
+    transition:.4s;
+
+    backdrop-filter:blur(15px);
 
 }
 
 .project-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
     border-color:#21E6C1;
 
-    box-shadow:0 20px 50px rgba(33,230,193,.18);
+    box-shadow:0 25px 45px rgba(0,0,0,.35);
 
 }
 
-.project-card::before{
+/* ===========================================================
+   ICON AREA
+=========================================================== */
 
-    content:"";
+.project-image{
 
-    position:absolute;
+    height:220px;
 
-    top:0;
+    display:flex;
 
-    left:0;
-
-    width:100%;
-
-    height:4px;
-
-    background:linear-gradient(90deg,#21E6C1,#278EA5);
-
-}
-
-.project-status{
-
-    display:inline-flex;
+    justify-content:center;
 
     align-items:center;
 
-    padding:8px 18px;
-
-    border-radius:30px;
-
-    background:rgba(33,230,193,.12);
-
-    color:#21E6C1;
-
-    font-size:13px;
-
-    margin-bottom:20px;
+    background:linear-gradient(135deg,#21E6C1,#278EA5);
 
 }
 
-.project-card h2{
+.project-image span{
 
-    font-size:28px;
+    font-size:90px;
+
+}
+
+/* ===========================================================
+   CONTENT
+=========================================================== */
+
+.project-content{
+
+    padding:35px;
+
+}
+
+.project-content h3{
 
     color:#ffffff;
+
+    font-size:28px;
 
     margin-bottom:18px;
 
 }
 
-.project-card p{
+.project-content p{
 
-    color:#cdd8e4;
+    color:#b8c7d6;
 
-    line-height:1.9;
+    line-height:1.8;
 
     margin-bottom:28px;
 
 }
 
-/* =====================================================
+/* ===========================================================
    TECH STACK
-===================================================== */
+=========================================================== */
 
-.tech-stack{
+.project-tech{
 
     display:flex;
 
@@ -182,101 +191,89 @@
 
     gap:12px;
 
+    margin-bottom:30px;
+
 }
 
-.tech-stack span{
+.project-tech span{
 
-    padding:9px 18px;
+    padding:9px 16px;
 
     border-radius:30px;
 
-    background:rgba(255,255,255,.05);
+    background:rgba(33,230,193,.08);
 
-    border:1px solid rgba(255,255,255,.08);
+    color:#21E6C1;
 
-    transition:.3s;
+    border:1px solid rgba(33,230,193,.18);
 
     font-size:14px;
 
+    transition:.3s;
+
 }
 
-.tech-stack span:hover{
+.project-tech span:hover{
 
     background:#21E6C1;
 
     color:#071624;
 
-    transform:translateY(-4px);
-
 }
 
-/* =====================================================
-   FOOTER
-===================================================== */
+/* ===========================================================
+   BUTTON
+=========================================================== */
 
-.project-footer{
+.project-buttons{
 
     display:flex;
 
-    justify-content:space-between;
+}
+
+.project-buttons a{
+
+    display:inline-flex;
 
     align-items:center;
 
-    margin-top:30px;
+    justify-content:center;
 
-    padding-top:20px;
+    width:100%;
 
-    border-top:1px solid rgba(255,255,255,.08);
+    padding:14px;
 
-}
+    border-radius:50px;
 
-.project-footer span{
+    background:#21E6C1;
 
-    color:#9fb8d5;
+    color:#071624;
 
-    font-size:15px;
+    font-weight:600;
 
-}
+    text-decoration:none;
 
-/* =====================================================
-   ANIMATION
-===================================================== */
-
-.project-card{
-
-    animation:fadeUp .8s ease both;
+    transition:.3s;
 
 }
 
-@keyframes fadeUp{
+.project-buttons a:hover{
 
-    from{
+    transform:translateY(-4px);
 
-        opacity:0;
-
-        transform:translateY(50px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
+    box-shadow:0 15px 35px rgba(33,230,193,.35);
 
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
 
-@media(max-width:992px){
+@media(max-width:900px){
 
-    .projects-header h1{
+    .section-header h2{
 
-        font-size:46px;
+        font-size:42px;
 
     }
 
@@ -284,71 +281,57 @@
 
 @media(max-width:768px){
 
-    .projects-page{
+    .projects{
 
-        padding:100px 20px 60px;
-
-    }
-
-    .projects-header{
-
-        margin-bottom:50px;
+        padding:80px 20px;
 
     }
 
-    .projects-header h1{
+    .section-header{
+
+        margin-bottom:60px;
+
+    }
+
+    .section-header h2{
 
         font-size:36px;
 
     }
 
-    .projects-header p{
+    .section-header p{
 
         font-size:16px;
 
     }
 
-    .projects-grid{
+    .project-grid{
 
         grid-template-columns:1fr;
 
-        gap:25px;
+    }
+
+    .project-image{
+
+        height:180px;
 
     }
 
-    .project-card{
+    .project-image span{
+
+        font-size:70px;
+
+    }
+
+    .project-content{
 
         padding:25px;
 
     }
 
-    .project-card h2{
+    .project-content h3{
 
         font-size:24px;
-
-    }
-
-    .project-footer{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:10px;
-
-    }
-
-    .tech-stack{
-
-        gap:10px;
-
-    }
-
-    .tech-stack span{
-
-        font-size:13px;
-
-        padding:8px 14px;
 
     }
 
@@ -356,27 +339,17 @@
 
 @media(max-width:480px){
 
-    .projects-header h1{
+    .project-tech{
 
-        font-size:30px;
-
-    }
-
-    .project-card{
-
-        padding:20px;
+        gap:10px;
 
     }
 
-    .project-card h2{
+    .project-tech span{
 
-        font-size:22px;
+        font-size:13px;
 
-    }
-
-    .project-card p{
-
-        font-size:15px;
+        padding:8px 14px;
 
     }
 

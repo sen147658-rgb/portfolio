@@ -4,158 +4,166 @@ export function Contact() {
 
     return `
 
-    <section class="contact-page">
+    <section class="contact">
 
         <div class="container">
 
-            <div class="contact-header">
+            <div class="section-header">
 
-                <span class="section-tag">
+                <span>CONTACT</span>
 
-                    GET IN TOUCH
-
-                </span>
-
-                <h1>
-
-                    Let's Build Something Amazing
-
-                </h1>
+                <h2>Let's Work Together</h2>
 
                 <p>
 
-                    I'm always open to discussing Java Backend Development,
-                    Full Stack opportunities, freelance projects, and exciting
-                    collaborations.
+                    Have an opportunity or want to discuss a project?
+                    Feel free to reach out anytime.
 
                 </p>
 
             </div>
 
-            <div class="contact-grid">
+            <div class="contact-wrapper">
 
-                <!-- LEFT -->
+                <!-- Left -->
 
                 <div class="contact-info">
 
-                    <div class="info-card">
+                    <div class="contact-card">
 
-                        <h3>📧 Email</h3>
+                        <div class="contact-icon">
 
-                        <a href="mailto:pranshumca@gmail.com">
+                            📧
 
-                            pranshumca@gmail.com
+                        </div>
 
-                        </a>
+                        <div>
 
-                    </div>
+                            <h3>Email</h3>
 
-                    <div class="info-card">
+                            <p>
 
-                        <h3>📱 Phone</h3>
+                                pranshumca@gmail.com
 
-                        <a href="tel:+917489768236">
+                            </p>
 
-                            +91 74897 68236
-
-                        </a>
+                        </div>
 
                     </div>
 
-                    <div class="info-card">
+                    <div class="contact-card">
 
-                        <h3>💼 LinkedIn</h3>
+                        <div class="contact-icon">
 
-                        <a
-                            href="https://www.linkedin.com/in/pranshu-sen-37a63a196/"
-                            target="_blank">
+                            📱
 
-                            linkedin.com/in/pranshu-sen-37a63a196
+                        </div>
 
-                        </a>
+                        <div>
+
+                            <h3>Phone</h3>
+
+                            <p>
+
+                                +91 XXXXX XXXXX
+
+                            </p>
+
+                        </div>
 
                     </div>
 
-                    <div class="info-card">
+                    <div class="contact-card">
 
-                        <h3>💻 GitHub</h3>
+                        <div class="contact-icon">
+
+                            📍
+
+                        </div>
+
+                        <div>
+
+                            <h3>Location</h3>
+
+                            <p>
+
+                                Bangalore, India
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="social-links">
 
                         <a
                             href="https://github.com/pranshu7489768236"
                             target="_blank">
 
-                            github.com/pranshu7489768236
+                            GitHub
+
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/pranshu-sen-37a63a196/"
+                            target="_blank">
+
+                            LinkedIn
 
                         </a>
 
                     </div>
 
-                    <div class="info-card">
+                </div>
 
-                        <h3>📍 Location</h3>
+                <!-- Right -->
 
-                        <p>
+                <form class="contact-form">
 
-                            Bengaluru, Karnataka, India
+                    <div class="form-group">
 
-                        </p>
+                        <input
+                            type="text"
+                            placeholder="Your Name">
 
                     </div>
 
-                </div>
+                    <div class="form-group">
 
-                <!-- RIGHT -->
+                        <input
+                            type="email"
+                            placeholder="Your Email">
 
-                <div class="contact-form">
+                    </div>
 
-                    <form id="contactForm">
+                    <div class="form-group">
 
-                        <div class="form-group">
+                        <input
+                            type="text"
+                            placeholder="Subject">
 
-                            <input
-                                type="text"
-                                placeholder="Your Name"
-                                required>
+                    </div>
 
-                        </div>
+                    <div class="form-group">
 
-                        <div class="form-group">
+                        <textarea
+                            rows="6"
+                            placeholder="Your Message">
 
-                            <input
-                                type="email"
-                                placeholder="Your Email"
-                                required>
+                        </textarea>
 
-                        </div>
+                    </div>
 
-                        <div class="form-group">
+                    <button
+                        type="submit"
+                        class="submit-btn">
 
-                            <input
-                                type="text"
-                                placeholder="Subject">
+                        Send Message
 
-                        </div>
+                    </button>
 
-                        <div class="form-group">
-
-                            <textarea
-                                rows="6"
-                                placeholder="Write your message..."
-                                required></textarea>
-
-                        </div>
-
-                        <button
-                            type="submit"
-                            class="send-btn">
-
-                            Send Message
-
-                        </button>
-
-                    </form>
-
-                </div>
+                </form>
 
             </div>
 

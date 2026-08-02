@@ -1,28 +1,119 @@
+import "./Gallery.css";
+
 export function Gallery() {
 
     return `
 
-        <section
-            style="
-                min-height:100vh;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                background:#081c3a;
-                color:white;
-            ">
+    <section class="gallery">
 
-            <div style="text-align:center;">
+        <div class="container">
 
-                <h1 style="font-size:60px;">
-                    Gallery
-                </h1>
+            <div class="section-header">
 
-                <p>Coming Soon...</p>
+                <span>GALLERY</span>
+
+                <h2>Journey & Achievements</h2>
+
+                <p>
+
+                    A glimpse of my professional journey,
+                    certifications, work life and memorable moments.
+
+                </p>
 
             </div>
 
-        </section>
+            <div class="gallery-grid">
+
+                <div class="gallery-card">
+
+                    <img
+                        src="/images/gallery/gallery1.jpg"
+                        alt="Gallery Image">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Office Life</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="gallery-card">
+
+                    <img
+                        src="/images/gallery/gallery2.jpg"
+                        alt="Gallery Image">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Certificate</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="gallery-card">
+
+                    <img
+                        src="/images/gallery/gallery3.jpg"
+                        alt="Gallery Image">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Project Demo</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="gallery-card">
+
+                    <img
+                        src="/images/gallery/gallery4.jpg"
+                        alt="Gallery Image">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Team Event</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="gallery-card">
+
+                    <img
+                        src="/images/gallery/gallery5.jpg"
+                        alt="Gallery Image">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Learning</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="gallery-card">
+
+                    <img
+                        src="/images/gallery/gallery6.jpg"
+                        alt="Gallery Image">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Achievement</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
     `;
 

@@ -4,125 +4,111 @@ export function About() {
 
     return `
 
-    <section class="about-page">
+    <section class="about">
 
         <div class="container">
 
-            <div class="about-header">
+            <div class="section-header">
 
-                <span class="section-tag">
+                <span>ABOUT ME</span>
 
-                    ABOUT ME
-
-                </span>
-
-                <h1>
-
-                    Passionate Java Backend Developer
-
-                </h1>
+                <h2>Who Am I?</h2>
 
                 <p>
-
-                    I specialize in building scalable enterprise applications,
-                    secure REST APIs and microservices using modern Java
-                    technologies.
-
+                    Passionate Backend Developer focused on building scalable,
+                    secure and high-performance enterprise applications.
                 </p>
 
             </div>
 
             <div class="about-grid">
 
-                <div class="about-card">
+                <div class="about-image">
 
-                    <h2>
+                    <img
+                        src="/images/profile.jpg"
+                        alt="Pranshu Sen">
 
-                        👨 About Me
+                </div>
 
-                    </h2>
+                <div class="about-content">
+
+                    <h3>
+                        Java Backend Developer
+                    </h3>
 
                     <p>
 
-                        Hi, I'm <strong>Pranshu Sen</strong>, a Java Backend
-                        Developer with 4+ years of experience working on
-                        enterprise applications.
+                        I have over 4 years of experience developing enterprise
+                        applications using Java, Spring Boot, Microservices,
+                        Kafka, PostgreSQL and Angular.
 
                     </p>
 
                     <p>
 
                         I enjoy solving complex backend problems,
-                        optimizing APIs, designing scalable architectures,
-                        and continuously learning new technologies.
+                        designing scalable REST APIs,
+                        optimizing database performance,
+                        and building clean architectures.
 
                     </p>
 
-                </div>
+                    <div class="skills-grid">
 
-                <div class="about-card">
+                        <span>Java</span>
 
-                    <h2>
+                        <span>Spring Boot</span>
 
-                        🚀 What I Do
+                        <span>Microservices</span>
 
-                    </h2>
+                        <span>Kafka</span>
 
-                    <ul>
+                        <span>PostgreSQL</span>
 
-                        <li>Enterprise Java Development</li>
+                        <span>MongoDB</span>
 
-                        <li>Spring Boot Applications</li>
+                        <span>Angular</span>
 
-                        <li>Microservices Architecture</li>
+                        <span>Docker</span>
 
-                        <li>REST API Development</li>
-
-                        <li>Kafka Integration</li>
-
-                        <li>Database Design</li>
-
-                        <li>Angular Applications</li>
-
-                        <li>Performance Optimization</li>
-
-                    </ul>
+                    </div>
 
                 </div>
 
             </div>
 
-            <div class="stats-grid">
+            <div class="info-grid">
 
-                <div class="stat-card">
+                <div class="info-card">
 
-                    <h2>4+</h2>
+                    <h4>Experience</h4>
 
-                    <p>Years Experience</p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h2>20+</h2>
-
-                    <p>Projects</p>
+                    <p>4+ Years</p>
 
                 </div>
 
-                <div class="stat-card">
+                <div class="info-card">
 
-                    <h2>15+</h2>
+                    <h4>Location</h4>
 
-                    <p>Technologies</p>
+                    <p>Bengaluru, India</p>
 
                 </div>
 
-                <div class="stat-card">
+                <div class="info-card">
 
-                    <h2>100%</h2>
+                    <h4>Email</h4>
 
-                    <p>Dedication</p>
+                    <p>pranshumca@gmail.com</p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h4>Availability</h4>
+
+                    <p>Open to Opportunities</p>
 
                 </div>
 

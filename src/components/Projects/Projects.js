@@ -4,83 +4,68 @@ export function Projects() {
 
     return `
 
-    <section class="projects-page">
+    <section class="projects">
 
         <div class="container">
 
-            <div class="projects-header">
+            <div class="section-header">
 
-                <span class="section-tag">
+                <span>PORTFOLIO</span>
 
-                    FEATURED PROJECTS
-
-                </span>
-
-                <h1>
-
-                    My Projects
-
-                </h1>
+                <h2>Featured Projects</h2>
 
                 <p>
 
-                    A collection of enterprise applications and personal projects
-                    showcasing my expertise in Java Backend Development,
-                    Spring Boot, Microservices and Full Stack Development.
+                    A collection of enterprise and personal applications built
+                    using Java, Spring Boot, Microservices and Angular.
 
                 </p>
 
             </div>
 
-            <div class="projects-grid">
+            <div class="project-grid">
 
                 <!-- Project 1 -->
 
                 <div class="project-card">
 
-                    <div class="project-status">
+                    <div class="project-image">
 
-                        Enterprise Project
-
-                    </div>
-
-                    <h2>
-
-                        Vulnerability Management System
-
-                    </h2>
-
-                    <p>
-
-                        Enterprise security platform developed at Atos to
-                        identify, prioritize and remediate vulnerabilities
-                        across enterprise infrastructure.
-
-                    </p>
-
-                    <div class="tech-stack">
-
-                        <span>Java</span>
-
-                        <span>Spring Boot</span>
-
-                        <span>Kafka</span>
-
-                        <span>REST API</span>
-
-                        <span>PostgreSQL</span>
-
-                        <span>Microservices</span>
+                        <span>🚀</span>
 
                     </div>
 
-                    <div class="project-footer">
+                    <div class="project-content">
 
-                        <span>
+                        <h3>
 
-                            🏢 Atos
+                            Vulnerability Management System
 
-                        </span>
+                        </h3>
+
+                        <p>
+
+                            Enterprise security platform developed using Java,
+                            Spring Boot and Microservices for identifying,
+                            tracking and resolving infrastructure
+                            vulnerabilities.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Microservices</span>
+                            <span>PostgreSQL</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="#">View Details</a>
+
+                        </div>
 
                     </div>
 
@@ -90,49 +75,42 @@ export function Projects() {
 
                 <div class="project-card">
 
-                    <div class="project-status">
+                    <div class="project-image">
 
-                        Enterprise Project
-
-                    </div>
-
-                    <h2>
-
-                        Vanguard Vulnerability Remediation
-
-                    </h2>
-
-                    <p>
-
-                        Worked at Infosys on upgrading Spring Boot services,
-                        resolving security vulnerabilities and maintaining
-                        enterprise applications for Vanguard.
-
-                    </p>
-
-                    <div class="tech-stack">
-
-                        <span>Spring Boot</span>
-
-                        <span>Java</span>
-
-                        <span>Angular</span>
-
-                        <span>PostgreSQL</span>
-
-                        <span>SonarQube</span>
-
-                        <span>Wiz</span>
+                        <span>🏥</span>
 
                     </div>
 
-                    <div class="project-footer">
+                    <div class="project-content">
 
-                        <span>
+                        <h3>
 
-                            🏢 Infosys
+                            Hospital Management System
 
-                        </span>
+                        </h3>
+
+                        <p>
+
+                            Complete hospital administration system including
+                            appointment booking, patient records, doctor
+                            management and secure authentication.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Angular</span>
+                            <span>MySQL</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="#">View Details</a>
+
+                        </div>
 
                     </div>
 
@@ -142,93 +120,41 @@ export function Projects() {
 
                 <div class="project-card">
 
-                    <div class="project-status">
+                    <div class="project-image">
 
-                        Personal Project
-
-                    </div>
-
-                    <h2>
-
-                        Hospital Management System
-
-                    </h2>
-
-                    <p>
-
-                        Full Stack application for managing patients,
-                        doctors, appointments, authentication,
-                        billing and reports.
-
-                    </p>
-
-                    <div class="tech-stack">
-
-                        <span>Spring Boot</span>
-
-                        <span>Angular</span>
-
-                        <span>JWT</span>
-
-                        <span>PostgreSQL</span>
+                        <span>🎮</span>
 
                     </div>
 
-                    <div class="project-footer">
+                    <div class="project-content">
 
-                        <span>
+                        <h3>
 
-                            👨‍💻 Personal
+                            Color Prediction Gaming Platform
 
-                        </span>
+                        </h3>
 
-                    </div>
+                        <p>
 
-                </div>
+                            Full Stack gaming application with authentication,
+                            wallet management, secure APIs and responsive UI.
 
-                <!-- Project 4 -->
+                        </p>
 
-                <div class="project-card">
+                        <div class="project-tech">
 
-                    <div class="project-status">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Angular</span>
+                            <span>MongoDB</span>
 
-                        Personal Project
+                        </div>
 
-                    </div>
+                        <div class="project-buttons">
 
-                    <h2>
+                            <a href="#">View Details</a>
 
-                        Portfolio Website
-
-                    </h2>
-
-                    <p>
-
-                        Modern responsive portfolio built using
-                        JavaScript, HTML, CSS and Vite featuring
-                        animations, responsive layouts and resume download.
-
-                    </p>
-
-                    <div class="tech-stack">
-
-                        <span>JavaScript</span>
-
-                        <span>HTML5</span>
-
-                        <span>CSS3</span>
-
-                        <span>Vite</span>
-
-                    </div>
-
-                    <div class="project-footer">
-
-                        <span>
-
-                            🌐 Portfolio
-
-                        </span>
+                        </div>
 
                     </div>
 
