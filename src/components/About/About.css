@@ -1,0 +1,331 @@
+/* ==========================================================
+   ABOUT SECTION
+========================================================== */
+
+.about-section{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:linear-gradient(
+        180deg,
+        #020B16,
+        #081C3A
+    );
+
+    overflow:hidden;
+
+}
+
+/* ===================================
+   Layout
+=================================== */
+
+.about-content{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    margin-top:70px;
+
+}
+
+/* ===================================
+   Image
+=================================== */
+
+.about-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image-ring{
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:50%;
+
+    padding:8px;
+
+    background:linear-gradient(
+        135deg,
+        #21E6C1,
+        #278EA5
+    );
+
+    animation:aboutRotate 18s linear infinite;
+
+}
+
+.about-image-ring img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:#081C3A;
+
+}
+
+/* ===================================
+   Content
+=================================== */
+
+.about-info h3{
+
+    font-size:38px;
+
+    font-family:Poppins,sans-serif;
+
+    margin-bottom:25px;
+
+    color:#ffffff;
+
+}
+
+.about-info p{
+
+    color:#B8C5D6;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+    font-size:17px;
+
+}
+
+/* ===================================
+   Details
+=================================== */
+
+.about-details{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+    margin-top:40px;
+
+}
+
+.about-details div{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    transition:.35s;
+
+}
+
+.about-details div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#21E6C1;
+
+}
+
+.about-details span{
+
+    display:block;
+
+    color:#9FB8D5;
+
+    font-size:13px;
+
+    margin-bottom:8px;
+
+}
+
+.about-details strong{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+/* ===================================
+   Statistics
+=================================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:80px;
+
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#21E6C1;
+
+    box-shadow:0 15px 40px rgba(33,230,193,.15);
+
+}
+
+.stat-card h3{
+
+    font-size:48px;
+
+    color:#21E6C1;
+
+    margin-bottom:12px;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+.stat-card p{
+
+    color:#B8C5D6;
+
+    font-size:16px;
+
+}
+
+/* ===================================
+   Animation
+=================================== */
+
+@keyframes aboutRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===================================
+   Tablet
+=================================== */
+
+@media(max-width:992px){
+
+    .about-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .about-image{
+
+        order:-1;
+
+    }
+
+    .about-details{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ===================================
+   Mobile
+=================================== */
+
+@media(max-width:576px){
+
+    .about-section{
+
+        padding:80px 0;
+
+    }
+
+    .about-image-ring{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+    .about-info h3{
+
+        font-size:28px;
+
+    }
+
+    .about-details{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-card{
+
+        padding:28px;
+
+    }
+
+}

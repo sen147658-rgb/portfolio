@@ -30,3 +30,64 @@
         opacity:.2;
     }
 }
+/* ==========================================
+   PAGE TRANSITIONS
+========================================== */
+
+.page-content{
+
+    min-height:100vh;
+
+}
+
+.page-fade-in{
+
+    animation:pageFadeIn .45s ease;
+
+}
+
+.page-fade-out{
+
+    animation:pageFadeOut .25s ease;
+
+}
+
+@keyframes pageFadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pageFadeOut{
+
+    from{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:translateY(-15px);
+
+    }
+
+}

@@ -85,8 +85,18 @@ export function Hero() {
                 <div class="hero-buttons">
 
                     <a
-                        href="#resume"
+                        href="/src/assets/resume/Pranshu_Sen_Resume.pdf"
+                        target="_blank"
                         class="btn btn-primary">
+
+                        View Resume
+
+                    </a>
+
+                    <a
+                        href="/src/assets/resume/Pranshu_Sen_Resume.pdf"
+                        download="Pranshu_Sen_Resume.pdf"
+                        class="btn btn-outline">
 
                         Download Resume
 

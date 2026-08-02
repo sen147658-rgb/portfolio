@@ -1,14 +1,13 @@
-import './style.css';
+import "./style.css";
 
-import './css/variables.css';
-import './css/global.css';
-import './css/animations.css';
-import './css/components.css';
-import './css/responsive.css';
+import "./css/variables.css";
+import "./css/global.css";
+import "./css/animations.css";
+import "./css/components.css";
+import "./css/responsive.css";
 
-import { App } from './js/app.js';
-import { initNavigation } from './js/navigation.js';
+import { App, initializeApp } from "./js/app.js";
 
-document.querySelector('#app').innerHTML = App();
+document.querySelector("#app").innerHTML = App();
 
-initNavigation();
+initializeApp();

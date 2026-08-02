@@ -1,71 +1,121 @@
-import gsap from "gsap";
+export function initHeroAnimation() {
 
+    initTypingEffect();
 
-export function initHeroAnimation(){
+    initRevealAnimation();
 
+    initMouseGlow();
 
-    const timeline = gsap.timeline();
+}
 
+/* ======================================
+   Typing Effect
+====================================== */
 
+function initTypingEffect() {
 
-    timeline
-    .from(".hero-badge",{
+    const role = document.querySelector(".hero-role");
 
-        opacity:0,
+    if (!role) return;
 
-        y:30,
+    const text = role.textContent.trim();
 
-        duration:0.8
+    role.textContent = "";
 
-    })
+    let index = 0;
 
+    function type() {
 
-    .from(".hero-title",{
+        if (index < text.length) {
 
-        opacity:0,
+            role.textContent += text.charAt(index);
 
-        y:50,
+            index++;
 
-        duration:1
+            setTimeout(type, 60);
 
-    },"-=0.4")
+        }
 
+    }
 
-    .from(".hero-description",{
+    setTimeout(type, 600);
 
-        opacity:0,
+}
 
-        y:40,
+/* ======================================
+   Reveal Animation
+====================================== */
 
-        duration:0.8
+function initRevealAnimation() {
 
-    },"-=0.5")
+    const elements = [
 
+        ".hero-badge",
 
-    .from(".hero-actions",{
+        ".hero-subtitle",
 
-        opacity:0,
+        ".hero-title",
 
-        y:30,
+        ".hero-role",
 
-        duration:0.8
+        ".hero-description",
 
-    },"-=0.4")
+        ".hero-skills",
 
+        ".hero-buttons",
 
-    .from(".profile-ring",{
+        ".profile-ring"
 
-        opacity:0,
+    ];
 
-        scale:0.7,
+    elements.forEach((selector, i) => {
 
-        rotation:180,
+        const element = document.querySelector(selector);
 
-        duration:1.2,
+        if (!element) return;
 
-        ease:"power3.out"
+        element.style.opacity = "0";
 
-    },"-=0.8");
+        element.style.transform = "translateY(40px)";
 
+        element.style.transition = "all .8s ease";
+
+        setTimeout(() => {
+
+            element.style.opacity = "1";
+
+            element.style.transform = "translateY(0px)";
+
+        }, 250 * i);
+
+    });
+
+}
+
+/* ======================================
+   Mouse Glow
+====================================== */
+
+function initMouseGlow() {
+
+    let glow = document.querySelector(".cursor-glow");
+
+    if (!glow) {
+
+        glow = document.createElement("div");
+
+        glow.className = "cursor-glow";
+
+        document.body.appendChild(glow);
+
+    }
+
+    document.addEventListener("mousemove", (e) => {
+
+        glow.style.left = e.clientX + "px";
+
+        glow.style.top = e.clientY + "px";
+
+    });
 
 }
